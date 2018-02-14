@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path : '',  loadChildren : './layout/layout.module#LayoutModule' },
-  { path : 'login',  loadChildren : './login/login.module#LoginModule' },
-  { path : 'login/:id',  loadChildren : './signup/signup.module#SignupModule' },
-  { path : 'signup',  loadChildren : './signup/signup.module#SignupModule' }
+  { path : 'login',  loadChildren : './layout/layout.module#LayoutModule' },
+  { path : '*/products',  loadChildren : './layout/layout.module#LayoutModule' },
+  { path : '*/details/:id',  loadChildren : './layout/layout.module#LayoutModule' },
+  { path : '*/checkout',  loadChildren : './layout/layout.module#LayoutModule' }
 
 ];
 

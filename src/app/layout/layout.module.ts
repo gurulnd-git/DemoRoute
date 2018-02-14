@@ -9,6 +9,10 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { MainContainerComponent } from './home/main-container/main-container.component';
 import { SplContainerComponent } from './home/spl-container/spl-container.component';
 import { FooterTopComponent } from './home/footer-top/footer-top.component';
+import { ProductsComponent } from './products/products.component';
+import { DetailsComponent } from './details/details.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   imports: [
     CommonModule,LayoutRoutingModule
@@ -21,6 +25,10 @@ import { FooterTopComponent } from './home/footer-top/footer-top.component';
     FooterComponent,
     MainContainerComponent,
     SplContainerComponent,
-    FooterTopComponent]
+    FooterTopComponent,
+    ProductsComponent,
+    DetailsComponent,
+    CheckoutComponent,
+    LoginComponent]
 })
 export class LayoutModule { }
